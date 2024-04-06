@@ -80,3 +80,10 @@ jobs:
           draft: false
           prerelease: false
           omitDraftDuringUpdate: true
+
+      - name: Delete Tag
+        uses: dev-drprasad/delete-tag-and-release@v1.1
+        with:
+          tag_name: v${{ needs.update-version.outputs.version }}
+          delete_release: false
+          github_token: ${{ secrets.GH_ACCESS_TOKEN }}
