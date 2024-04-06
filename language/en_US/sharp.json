@@ -1,0 +1,10 @@
+{
+    "sharp_server": "Sharp API Server",
+    "sharp_server_description": "Sharp-API server address, the slash at the end is optional",
+    "sharp_key": "Sharp Key",
+    "sharp_key_description": "Please fill in the Sharp-API key",
+    "sharp_salt": "Sharp Salt",
+    "sharp_salt_description": "Please fill in the Sharp-API salt",
+    "sharp_encryption_key": "Sharp Encryption Key",
+    "sharp_encryption_key_description": "Please fill in the Sharp-API encryption key"
+}

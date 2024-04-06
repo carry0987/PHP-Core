@@ -1,0 +1,6 @@
+{
+    "delete_member": "When deleting a member, all data of the member will be removed. Are you sure you want to delete it?",
+    "delete_member_group": "When deleting a member group, all members under the group will be deleted. Are you sure you want to delete it?",
+    "delete_tag": "When deleting a tag, the tag will be removed from all articles. Are you sure you want to delete it?",
+    "delete_tag_group": "When deleting a tag group, all tags under the group will be deleted. Are you sure you want to delete it?"
+}

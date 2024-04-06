@@ -1,0 +1,9 @@
+{
+    "sync_setting": "Sync Setting",
+    "ignore_folder": "Ignore existed folder",
+    "ignore_file": "Ignore file",
+    "sub_folder": "Traverse Sub Folder",
+    "specific_folder": "Sync specific folder",
+    "path": "Folder path",
+    "sync_to": "Sync to"
+}

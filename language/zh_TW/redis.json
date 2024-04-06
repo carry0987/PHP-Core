@@ -1,0 +1,13 @@
+{
+    "connection": "連線狀態",
+    "version": "Redis 版本",
+    "ping": "Ping",
+    "host": "位址",
+    "port": "Port",
+    "database": "資料庫",
+    "max_ttl": "MaxTTL",
+    "flush": "清理",
+    "flushdb": "清理資料庫",
+    "data_list": "資料列表",
+    "memory_used": "記憶體使用量"
+}

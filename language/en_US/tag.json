@@ -1,0 +1,14 @@
+{
+    "list": "Tag List",
+    "add": "Add Tag",
+    "edit": "Edit Tag",
+    "move": "Move Tag",
+    "delete": "Delete Tag",
+    "group": "Group",
+    "add_group": "Add Group",
+    "edit_group": "Edit Group",
+    "delete_group": "Delete Group",
+    "no_group": "No Group",
+    "name": "Tag Name",
+    "add_multiple": "Multiple tags separated by <code>','</code> commas"
+}

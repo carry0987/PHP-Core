@@ -1,0 +1,11 @@
+{
+    "installing": "Installing",
+    "installed": "You don't have to install again !",
+    "install_program": "Install Program",
+    "install_next": "Next",
+    "install_success": "Install Success !",
+    "install_remove": "Please manually remove the install folder",
+    "install_error": "Install Error !",
+    "please_reinstall_program": "Please Re-Install Program !",
+    "reinstall": "Re-Install"
+}

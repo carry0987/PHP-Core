@@ -1,0 +1,11 @@
+{
+    "installing": "安裝",
+    "installed": "您已安裝過了！",
+    "install_program": "安裝程式",
+    "install_next": "下一步",
+    "install_success": "安裝成功！",
+    "install_remove": "請手動移除 install 資料夾",
+    "install_error": "安裝失敗！",
+    "please_reinstall_program": "請重新安裝程式！",
+    "reinstall": "重新安裝"
+}

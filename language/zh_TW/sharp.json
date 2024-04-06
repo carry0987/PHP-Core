@@ -1,0 +1,10 @@
+{
+    "sharp_server": "Sharp API Server",
+    "sharp_server_description": "Sharp-API 伺服器位址，後面的斜線可加可不加",
+    "sharp_key": "Sharp Key",
+    "sharp_key_description": "請填寫 Sharp-API 的 Key",
+    "sharp_salt": "Sharp Salt",
+    "sharp_salt_description": "請填寫 Sharp-API 的 Salt",
+    "sharp_encryption_key": "Sharp Encryption Key",
+    "sharp_encryption_key_description": "請填寫 Sharp-API 的 Encryption Key"
+}

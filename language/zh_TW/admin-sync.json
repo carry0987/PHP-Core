@@ -1,0 +1,9 @@
+{
+    "sync_setting": "同步設定",
+    "ignore_folder": "略過現有的資料夾",
+    "ignore_file": "略過檔案",
+    "sub_folder": "遍歷子資料夾",
+    "specific_folder": "僅同步特定資料夾",
+    "path": "資料夾路徑",
+    "sync_to": "同步至"
+}

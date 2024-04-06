@@ -1,0 +1,14 @@
+{
+    "list": "標籤列表",
+    "add": "新增標籤",
+    "edit": "編輯標籤",
+    "move": "移動標籤",
+    "delete": "刪除標籤",
+    "group": "分類",
+    "add_group": "新增分類",
+    "edit_group": "編輯分類",
+    "delete_group": "刪除分類",
+    "no_group": "未分類",
+    "name": "標籤名稱",
+    "add_multiple": "多個標籤請用逗號<code>','</code>分隔"
+}

@@ -1,0 +1,16 @@
+{
+    "group": "用戶組",
+    "add": "新增用戶",
+    "edit": "編輯用戶",
+    "delete": "刪除用戶",
+    "uid": "用戶編號",
+    "status": "用戶狀態",
+    "normal": "正常",
+    "banned": "停權",
+    "deleted": "已刪除",
+    "my_album": "我的相簿",
+    "my_favorite": "我的最愛",
+    "my_message": "我的訊息",
+    "default_bio": "擁有{album_num}個相簿",
+    "member_not_found": "查無此用戶"
+}

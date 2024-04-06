@@ -1,0 +1,9 @@
+{
+    "update_success": "Update success",
+    "delete_success": "Delete success",
+    "create_success": "Create success",
+    "login_success": "Login success",
+    "logout_success": "Logout success",
+    "signup_success": "Signup success",
+    "upload_success": "Upload success"
+}

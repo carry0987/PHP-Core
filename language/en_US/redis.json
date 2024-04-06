@@ -1,0 +1,13 @@
+{
+    "connection": "Connection Status",
+    "version": "Redis Version",
+    "ping": "Ping",
+    "host": "Host",
+    "port": "Port",
+    "database": "Database",
+    "max_ttl": "MaxTTL",
+    "flush": "Flush",
+    "flushdb": "FlushDB",
+    "data_list": "Data List",
+    "memory_used": "Memory Used"
+}

@@ -1,0 +1,9 @@
+
+.DS_Store
+.vscode
+data/cache/*
+data/attachment/*
+data/temp/*
+config/config.inc.php
+source/vendor/*
+**/node_modules/

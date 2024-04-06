@@ -1,0 +1,9 @@
+{
+    "enable": "Enable Search Feature",
+    "rebuild_index": "Rebuild Index",
+    "rebuild_index_desc": "Depending on the number of data, the rebuild time may increase or decrease",
+    "advanced_search": "Advanced Search",
+    "advanced_support": "Your server supports advanced search",
+    "advanced_not_support": "Your server does not support advanced search, this feature requires Mroonga engine installed",
+    "min_length": "Minimum length of search string"
+}

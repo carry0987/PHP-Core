@@ -1,0 +1,16 @@
+{
+    "group": "Group",
+    "add": "Add Member",
+    "edit": "Edit Member",
+    "delete": "Delete Member",
+    "uid": "Member ID",
+    "status": "Member Status",
+    "normal": "Normal",
+    "banned": "Banned",
+    "deleted": "Deleted",
+    "my_album": "My Album",
+    "my_favorite": "My Favorite",
+    "my_message": "My Message",
+    "default_bio": "has {album_num} albums",
+    "member_not_found": "Member Not Found"
+}

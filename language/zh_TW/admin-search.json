@@ -1,0 +1,9 @@
+{
+    "enable": "啟用搜索功能",
+    "rebuild_index": "重建索引",
+    "rebuild_index_desc": "根據資料數量多寡，重建時間可能會有所增減",
+    "advanced_search": "高級搜索",
+    "advanced_support": "您的伺服器支援高級搜索",
+    "advanced_not_support": "您的伺服器不支援高級搜索，本功能需要安裝 Mroonga 引擎",
+    "min_length": "搜索字符串的最小長度"
+}
