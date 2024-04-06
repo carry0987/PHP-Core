@@ -10,12 +10,19 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       version: ${{ env.VERSION }}
+      message: ${{ env.TAG_MESSAGE }}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
           fetch-depth: 0 # Fetch all history for all tags and branches
+
+      - name: Get Release Notes
+        run: |
+          echo "TAG_MESSAGE=$(git tag -l --format="%(contents:body)" $GITHUB_REF_NAME)"
+          echo "TAG_MESSAGE=$TAG_MESSAGE" >> $GITHUB_ENV
+          echo "Release message: $TAG_MESSAGE"
 
       - name: Get update version
         run: |
@@ -69,7 +76,7 @@ jobs:
           tag: ${{ needs.update-version.outputs.version }}
           name: ${{ needs.update-version.outputs.version }}
           body: |
-            Release v${{ needs.update-version.outputs.version }}
+            ${{ needs.update-version.outputs.message }}
           draft: false
           prerelease: false
           omitDraftDuringUpdate: true
