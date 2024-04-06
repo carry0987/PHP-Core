@@ -72,3 +72,4 @@ jobs:
             Release v${{ needs.update-version.outputs.version }}
           draft: false
           prerelease: false
+          omitDraftDuringUpdate: true
