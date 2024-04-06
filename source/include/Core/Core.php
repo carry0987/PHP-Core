@@ -31,7 +31,7 @@ class Core
     private array $template_option = [];
     private array $lang_list = ['en_US' => 'English', 'zh_TW' => '繁體中文'];
 
-    public const CORE_VERSION = '__VERSION__';
+    public const CORE_VERSION = '1.0.0';
     public const ROOT_PATH = __DIR__.'/../../../';
     public const CONFIG_FILE = 'config.inc.php';
     public const SYSTEM_CONFIG = 'web_config';
