@@ -1,0 +1,80 @@
+<link href="{loadcss maintenance-login.css}" rel="stylesheet" type="text/css">
+<div class="container my-4">
+    <div class="row justify-content-center">
+        <!--{if !isset($login_permit)}-->
+        <div class="col-md-6 col-lg-5 shadow p-4 bg-light rounded">
+            <form action="maintenance.php?key={MAINTENANCE_KEY}" id="login-form" method="post">
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="account" id="account" autocomplete="account" placeholder="{$LANG['common']['username']}" />
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" name="password" id="password" autocomplete="current-password" placeholder="{$LANG['common']['password']}" />
+                </div>
+                <div class="unselectable">
+                    <button type="submit" name="submit" class="btn btn-success m-0 w-100">{$LANG['common']['login']}</button>
+                </div>
+            </form>
+        </div>
+        <!--{else}-->
+        <!--{if $login_permit === true}-->
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', (event) => {
+            setTimeout(countdown, 1000, "./");
+        });
+        </script>
+        <!--{block langParam['redirect_time']}-->
+        <span id="refresh">3</span>
+        <!--{/block}-->
+        <div class="information">
+            <div class="information-box">
+                <h2>{$LANG['common']['login_success']}</h2>
+                <h3>{lang $LANG['common']['redirect_info'] $langParam}</h3>
+                <a class="ifnorefresh" href="./">{$LANG['common']['if_no_refresh']}</a>
+            </div>
+        </div>
+        <!--{else}-->
+        <div class="infobox">
+            <div class="infobox-inner">
+                <div class="infobox-icon-box">
+                    <div class="infobox-icon">
+                        <img src="{static icon/error.svg}" alt="Error" />
+                    </div>
+                </div>
+                <!--{if isset($login_error) && $login_error !== false}-->
+                <div class="infobox-text">
+                    <h3>{$login_error}</h3>
+                    <a href="./maintenance.php">{$LANG['common']['back_page']}</a>
+                </div>
+                <!--{/if}-->
+            </div>
+        </div>
+        <!--{/if}-->
+        <!--{/if}-->
+    </div>
+</div>
+<!---Countdown-Function--->
+<script type="text/javascript">
+function countdown(url) {
+    let s = document.getElementById('refresh');
+    s.innerHTML = s.innerHTML - 1;
+    if (s.innerHTML == 0) {
+        window.location = url;
+    } else {
+        setTimeout(countdown, 1000, url);
+    }
+}
+</script>
+<script type="text/javascript">
+$('#login-form').submit(function() {
+    if ($('#account').val() == '') {
+        alert(`{$LANG['common']['login_empty']}`);
+        $('#account').focus();
+        return false;
+    } else if ($('#password').val() == '') {
+        alert(`{$LANG['common']['password_empty']}`);
+        $('#password').focus();
+        return false;
+    }
+    return true;
+});
+</script>

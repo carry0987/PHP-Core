@@ -1,0 +1,25 @@
+body {
+    font-family: Helvetica, system-ui, '黑體-繁', sans-serif;
+    background-color: #E84C3D;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Main */
+#maintenance img {
+    width: 200px;
+    height: 200px;
+}
+
+h1,
+footer * {
+    color: #fcfcfc;
+}
+
+/* Mobile view */
+@media screen and (min-width: 320px) and (max-width: 680px) {
+    #maintenance img {
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@carry0987/utils-full": "^1.1.13",
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1"
+  },
+  "scripts": {
+    "clean": "for dir in $(find node_modules -maxdepth 1 -type d | tail -n +2); do rm -rf plugins/${dir#node_modules/}; done",
+    "copy": "find node_modules -type d -name dist | while read dir; do target=plugins/${dir#node_modules/}; target=${target%/dist}; mkdir -p $target && rsync -av --quiet --exclude='*.ts' $dir/ $target/; done",
+    "clear-bootstrap-js": "find plugins/bootstrap/js ! -name 'bootstrap.min.js' ! -name 'bootstrap.min.js.map' -type f -delete",
+    "clear-bootstrap-css": "find plugins/bootstrap/css ! -name 'bootstrap.min.css' ! -name 'bootstrap.min.css.map' -type f -delete",
+    "clear-jquery": "find plugins/jquery -type f ! -name 'jquery.min.js' -delete",
+    "clear-empty": "find plugins -type d -empty -delete",
+    "remove-object-assign": "rm -rvf plugins/object.assign",
+    "remove-popperjs": "rm -rf plugins/@popperjs",
+    "dist": "run-s clean copy clear-* remove-*"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

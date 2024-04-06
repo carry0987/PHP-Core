@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="{$core->host['link']}">
+    <title>{$LANG['maintenance']['title']} | {$meta['name']}</title>
+    <meta name="description" content="{$LANG['maintenance']['message']}" />
+    <meta itemscope itemprop="name" content="{$meta['name']}" />
+    <meta itemscope itemprop="image" content="{$meta['image']}" />
+    <meta property="og:title" content="{$LANG['maintenance']['title']}" />
+    <meta property="og:description" content="{$LANG['maintenance']['message']}" />
+    <meta property="og:url" content="{$meta['url']}" />
+    <meta property="og:site_name" content="{$meta['name']}" />
+    <meta property="og:image" content="{$meta['image']}" />
+    <meta property="og:type" content="{$meta['type']}" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="{loadcss ../plugins/bootstrap/css/bootstrap.min.css}" rel="stylesheet" type="text/css">
+    <!-- jQuery -->
+    <script src="{loadjs ../plugins/jquery/jquery.min.js}"></script>
+    <!-- Utils -->
+    <script src="{loadjs ../plugins/@carry0987/utils-full/utils-full.min.js}"></script>
+    <!-- Custom Style -->
+    <link href="{loadcss maintenance.css}" rel="stylesheet" type="text/css">
+</head>
+
+<body class="h-100">
+    <!--{if $maintenance_login === false}-->
+    <div class="text-center mt-5">
+        <div id="maintenance">
+            <img src="{static icon/maintenance.svg}" class="img-fluid" alt="Maintenance Icon" />
+        </div>
+        <h1 class="display-3 fw-semibold mt-5 mx-3">{$LANG['maintenance']['message']}</h1>
+    </div>
+    <!--{/if}-->
+    <!--{if $maintenance_login !== false}-->
+    <!--{template maintenance_login}-->
+    <!--{/if}-->
+    <!---Footer--->
+    <footer class="fixed-bottom">
+        <div id="footer">
+            <p class="copyright">Powered by <a href="https://github.com/carry0987" class="unselectable text-decoration-none">carry0987</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
