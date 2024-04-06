@@ -20,7 +20,7 @@ jobs:
 
       - name: Get Release Notes
         run: |
-          echo "TAG_MESSAGE=$(git tag -l --format="%(contents:body)" $GITHUB_REF_NAME)"
+          echo "TAG_MESSAGE=$(git tag -l --format="%(contents:body)" ${{ github.ref_name }})"
           echo "TAG_MESSAGE=$TAG_MESSAGE" >> $GITHUB_ENV
           echo "Release message: $TAG_MESSAGE"
 
